@@ -44,7 +44,7 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.locationType = 'hash';
     ENV.baseURL = '/storefront/';
-
+    ENV.spreeToken = "acd3424d5870b493033bbbdd61f78eb1cfef652f598f9df6";
     ENV.host = "https://desolate-brushlands-39207.herokuapp.com/";
   }
 
