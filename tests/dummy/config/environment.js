@@ -42,7 +42,10 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.locationType = 'hash';
+    ENV.baseURL = '/storefront/';
 
+    ENV.host = "https://desolate-brushlands-39207.herokuapp.com/";
   }
 
   return ENV;
