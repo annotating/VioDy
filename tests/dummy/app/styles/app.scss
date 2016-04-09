@@ -1,0 +1,39 @@
+@import 'material-design-lite';
+@import "font-awesome";
+@import "website-android-template";
+@import "bootstrap";
+@import "storefront";
+@import "simwms-assets/common";
+@import "simwms-assets/functions";
+.android-slogan,
+.android-sub-slogan {
+  color: #fff;
+}
+
+.android-be-together-section {
+  color: #fff;
+  background-color: #444;
+}
+
+.violence-hero__container {
+  margin-top: 250px;
+  font-size: 24px; 
+}
+
+.highlight {
+  color: #f44336;
+}
+
+.angry-woman {
+  background: images-url('angry-woman.jpg') center top no-repeat;
+  background-size: cover;
+}
+.stabby-sihoulettes {
+  background: images-url('stabby.png') center top repeat-x;
+  background-size: contain;
+}
+
+.violence-products__jumbotron {
+  margin-bottom: 0;
+  padding-bottom: 64px;
+}

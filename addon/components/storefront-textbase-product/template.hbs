@@ -1,0 +1,17 @@
+<span class="mdl-list__item-primary-content">
+  <span>{{named-yield "title"}}</span>
+  <span class="mdl-list__item-text-body">
+    {{named-yield "subtitle"}}
+  </span>
+</span>
+<span class="mdl-list__item-secondary-content">
+  <button class="mdl-list__item-secondary-action" {{action "add2cart"}}>
+    {{named-yield "cta"}}
+  </button>
+</span>
+
+{{yield (hash
+  title=(component "block-for" "title")
+  subtitle=(component "block-for" "subtitle")
+  cta=(component "block-for" "cta")
+)}}

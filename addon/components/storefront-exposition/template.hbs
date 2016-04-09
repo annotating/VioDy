@@ -1,0 +1,34 @@
+{{#if (eq position "bottom")}}
+  {{#if imgSrc}}
+    <div class="storefront-exposition__image-container">
+      <img class="storefront-exposition__image" src="{{imgSrc}}">
+    </div>
+  {{else}}
+    <div class="storefront-exposition__background-image {{imgClass}}"></div>
+  {{/if}}
+{{/if}}
+
+<div class="storefront-exposition__text-section storefront-exposition__text-section-{{position}}">
+  <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">
+    {{named-yield "title"}}
+  </div>
+  <p class="mdl-typography--font-light">
+    {{named-yield "subtitle"}}
+  </p>
+  <div class="storefront-exposition__cta">
+    {{yield (hash
+      title=(component "block-for" "title")
+      subtitle=(component "block-for" "subtitle")
+      ctaClass=ctaClass
+    )}}
+  </div>
+</div>
+{{#if (eq position "top")}}
+  {{#if imgSrc}}
+    <div class="storefront-exposition__image-container">
+      <img class="storefront-exposition__image" src="{{imgSrc}}">
+    </div>
+  {{else}}
+    <div class="storefront-exposition__background-image {{imgClass}}"></div>
+  {{/if}}
+{{/if}}

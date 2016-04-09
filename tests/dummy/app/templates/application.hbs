@@ -1,3 +1,12 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+{{#website-layout title="Violence Dynamics"
+  navLinks=(append
+    (hash path="instructors")
+    (hash path="contact")
+    (hash path="products" text="Schedule"))
+  footLinks=(append
+    (hash path="assets")
+    (hash path="admin")
+    (hash href="http://www.getmdl.io/templates/android-dot-com/index.html" text="Template Source"))
+  as |layout|}}
+  {{outlet}}
+{{/website-layout}}

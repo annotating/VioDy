@@ -1,0 +1,14 @@
+.storefront-products {
+  background-color: #fff;
+  padding-top: 12px;
+  padding-bottom: 14px;
+}
+
+.store-products__fine-print,
+.storefront-products__banner {
+  padding: 0 12px 0 12px;
+}
+
+.store-products__fine-print:before {
+  content: "*";
+}

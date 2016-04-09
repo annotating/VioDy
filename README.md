@@ -1,6 +1,6 @@
 # Storefront
 
-This README outlines the details of collaborating on this Ember addon.
+A spree powered product shop and introduction site
 
 ## Installation
 

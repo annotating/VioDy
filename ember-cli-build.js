@@ -4,9 +4,19 @@ var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
   var app = new EmberAddon(defaults, {
-    // Add options here
+    babel: { includePolyfill: true },
+    snippetPaths: ['snippets'],
+    'ember-font-awesome': {
+      useScss: true, // for ember-cli-sass
+    },
+    sassOptions: {
+      includePaths: [
+        'bower_components/material-design-lite/src'
+      ]
+    }
   });
 
+  app.import(app.bowerDirectory + '/material-design-lite/material.js');
   /*
     This build file specifies the options for the dummy test app of this
     addon, located in `/tests/dummy`
