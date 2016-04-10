@@ -8,13 +8,15 @@ Router = Ember.Router.extend
 Router.map ->
   {namespace, model, collection, form, view} = DSL.import @
 
-  collection "products"
   collection "instructors"
+  view "schedule"
   view "contact"
   namespace "assets", ->
     view "requirements"
     view "expositions"
     view "textbase-products"
+    view "minihero"
+    view "grid-cards"
   namespace "admin", ->
     collection "products", ->
       form "new"

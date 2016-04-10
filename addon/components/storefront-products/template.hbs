@@ -2,6 +2,8 @@
 <ul class="mdl-list storefront-products__list">
   {{#each collection as |model|}}
     {{yield model}}
+  {{else}}
+    {{yield}}
   {{/each}}
 </ul>
 <small class="store-products__fine-print mdl-typography--font-light mdl-typography--title-color-contrast">{{fineprint}}</small>

@@ -1,10 +1,9 @@
 {{#storefront-products 
   collection=model 
-  checkout="checkout" 
   banner="Don't miss this chance" 
   fineprint="All prices are per person except as noted above."
   as |product|}}
-  {{#storefront-textbase-product as |yields|}}
+  {{#storefront-textbase-product checkout="endOfPreview" model=product as |yields|}}
     {{#yields.title}}{{product.name}} - {{product.displayPrice}}{{/yields.title}}
     {{#yields.subtitle}}{{product.description}}{{/yields.subtitle}}
     {{#yields.cta}}<i class="material-icons">add_shopping_cart</i>{{/yields.cta}}

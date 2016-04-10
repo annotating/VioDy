@@ -2,11 +2,12 @@
   navLinks=(append
     (hash path="instructors")
     (hash path="contact")
-    (hash path="products" text="Schedule"))
+    (hash path="schedule"))
   footLinks=(append
     (hash path="assets")
-    (hash path="admin")
+    (hash href=(concat config.host "admin") text="Admin")
     (hash href="http://www.getmdl.io/templates/android-dot-com/index.html" text="Template Source"))
   as |layout|}}
   {{outlet}}
 {{/website-layout}}
+{{ember-notify messageStyle='bootstrap' closeAfter=null}}

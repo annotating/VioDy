@@ -1,0 +1,12 @@
+{{#website-features title=""}}
+  {{#each collection as |instructor|}}
+    {{#website-feature-card src=instructor.mugShot cta=true title=instructor.name as |card|}}
+      {{#card.cta}} 
+        <a href="{{instructor.externalLink}}" class="{{card.ctaClass}}">
+          <i class="material-icons">external_link</i> Learn More...
+        </a>
+      {{/card.cta}}
+      {{md-text text=instructor.description linkify=true}}
+    {{/website-feature-card}}
+  {{/each}}
+{{/website-features}}

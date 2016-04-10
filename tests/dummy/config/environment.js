@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'dummy',
     environment: environment,
     baseURL: '/',
-    namespace: "/api",
+    namespace: "api",
     locationType: 'auto',
     spreeToken: "8a97184f5a29394361e204c91e608ff255fb9fcb99cb6373",
     EmberENV: {

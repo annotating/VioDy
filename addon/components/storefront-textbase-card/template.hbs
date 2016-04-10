@@ -1,0 +1,36 @@
+<div class="storefront-textbase-card__actual-card mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title mdl-card--border">
+    {{named-yield "title" class="mdl-card__title-text"}}
+    {{named-yield "subtitle" class="mdl-card__subtitle-text"}}
+  </div>
+  {{#if (eq cardType "list")}}
+    <ul class="storefront-textbase-card__list-group mdl-list">
+      {{yield (hash
+        ctaClass="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+        listClass="mdl-list__item storefront-textbase-card__list-group-item"
+        title=(component "block-for" "title")
+        subtitle=(component "block-for" "subtitle")
+        fineprint=(component "block-for" "fineprint")
+      )}}
+    </ul>
+  {{else}}
+    <div class="mdl-card__supporting-text">
+      {{yield (hash
+        ctaClass="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+        title=(component "block-for" "title")
+        subtitle=(component "block-for" "subtitle")
+        fineprint=(component "block-for" "fineprint")
+      )}}
+    </div>
+  {{/if}}
+  {{#if hasFineprint}}
+    <div class="mdl-card__supporting-text">
+      {{named-yield "fineprint" class="storefront-textbase-card__fineprint"}}
+    </div>
+  {{/if}}
+  {{#if hasCta}}
+    <div class="mdl-card__actions mdl-card--border">
+      {{named-yield "cta"}}
+    </div>
+  {{/if}}
+</div>

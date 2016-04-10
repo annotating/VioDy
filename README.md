@@ -2,6 +2,10 @@
 
 A spree powered product shop and introduction site
 
+TODO:
+1. get the grid cards working
+2. put in a modal to show up when the checkout is clicked (since we can't support it yet)
+
 ## Installation
 
 * `git clone` this repository

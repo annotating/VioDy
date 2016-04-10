@@ -37,3 +37,21 @@
   margin-bottom: 0;
   padding-bottom: 64px;
 }
+
+.violence-instructors-collection {
+  .mdl-card__media {
+    height: 350px;
+  }
+}
+
+.violence-contact {
+  min-height: 50vh;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mdl-navigation__link.active {
+  border-bottom: 4px solid #F4511E;
+}

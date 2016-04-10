@@ -4,11 +4,13 @@
     {{named-yield "subtitle"}}
   </span>
 </span>
-<span class="mdl-list__item-secondary-content">
-  <button class="mdl-list__item-secondary-action" {{action "add2cart"}}>
-    {{named-yield "cta"}}
-  </button>
-</span>
+{{#unless noCta}}
+  <span class="mdl-list__item-secondary-content">
+    <button class="mdl-list__item-secondary-action" {{action "cta" model}}>
+      {{named-yield "cta"}}
+    </button>
+  </span>
+{{/unless}}
 
 {{yield (hash
   title=(component "block-for" "title")

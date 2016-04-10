@@ -1,0 +1,17 @@
+{{#each collection as |model|}}
+  {{yield (hash
+    fineprint=(component "block-for" "fineprint")
+    model=model
+    cardClass=cardClass
+  )}}
+{{else}}
+  {{yield (hash
+    fineprint=(component "block-for" "fineprint")
+    cardClass=cardClass
+  )}}
+{{/each}}
+{{#unless noFineprint}}
+  <div class="storefront-grid-cards__fineprint">
+    <small class="mdl-typography--font-light">{{named-yield "fineprint"}}</small>
+  </div>
+{{/unless}}
