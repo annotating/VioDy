@@ -1,6 +1,6 @@
 {
   "name": "storefront",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Spree powered AutoX Ember addon for quickly building simple store websites",
   "directories": {
     "doc": "doc",
