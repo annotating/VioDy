@@ -54,6 +54,7 @@
     "ember-phoenix-chan": "0.1.10",
     "ember-remarkable": "3.0.0",
     "ember-resolver": "^2.0.3",
+    "ember-selenium-build": "0.1.4",
     "ember-simple-auth": "1.1.0-beta.3",
     "ember-truth-helpers": "1.2.0",
     "glob": "^4.5.3",
