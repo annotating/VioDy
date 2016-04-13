@@ -1,7 +1,7 @@
 {
   "name": "storefront",
   "version": "0.1.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Spree powered AutoX Ember addon for quickly building simple store websites",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -75,6 +75,7 @@
     "inflection": "^1.9.0"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "https://foxnewsnetwork.gitlab.io/storefront"
   }
 }

@@ -2,6 +2,8 @@
 
 A spree powered product shop and introduction site
 
+[demo here](https://foxnewsnetwork.gitlab.io/storefront)
+
 TODO:
 1. get the grid cards working
 2. put in a modal to show up when the checkout is clicked (since we can't support it yet)
