@@ -5,9 +5,9 @@ module.exports = [
   "schedule",
   "contact",
   "assets/",
-  "assets/requirements"
-  "assets/expositions"
-  "assets/textbase-products"
-  "assets/minihero"
+  "assets/requirements",
+  "assets/expositions",
+  "assets/textbase-products",
+  "assets/minihero",
   "assets/grid-cards"
 ];
