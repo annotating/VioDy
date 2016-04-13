@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build",
+    "deploy": "ember selenium-build:build && ember gitlab-pages:commit --npm-build=true --build-path=selenium-dist",
+    "build": "echo 'do-nothing'",
     "start": "ember server",
     "test": "ember try:testall"
   },
@@ -45,7 +46,7 @@
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^1.0.5",
     "ember-font-awesome": "2.1.0",
-    "ember-gitlab-pages": "^0.1.0",
+    "ember-gitlab-pages": "0.2.0",
     "ember-load-initializers": "^0.5.1",
     "ember-lodash": "0.0.6",
     "ember-moment": "6.0.0",
