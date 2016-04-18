@@ -12,7 +12,6 @@ Router.map ->
   view "schedule"
   view "contact"
   namespace "assets", ->
-    view "requirements"
     view "expositions"
     view "textbase-products"
     view "minihero"

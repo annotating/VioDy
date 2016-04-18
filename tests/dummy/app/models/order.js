@@ -1,5 +1,5 @@
-import Ember from 'ember';
 import DS from 'ember-data';
+import Ember from 'ember';
 import HandlesNestedServerErrors from 'spree-ember-core/mixins/handles-nested-server-errors';
 import CanCheckout from 'spree-ember-core/mixins/can-checkout';
 

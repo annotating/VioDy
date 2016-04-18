@@ -1,0 +1,42 @@
+# data-connection
+ember install active-model-adapter # : "2.1.1",
+ember install autox # : "git://github.com/foxnewsnetwork/autox.git#96eb7e8411750867616754307b60ddb252f69567",
+ember install ember-concurrency # : "0.6.0",
+ember install ember-cpm # : "2.1.2",
+ember install ember-moment # : "6.0.0",
+ember install ember-phoenix-chan # : "0.1.10",
+ember install ember-simple-auth # : "1.1.0-beta.3",
+ember install ember-truth-helpers # : "1.2.0",
+ember install ember-notify # : "5.0.2",
+ember install ember-cli-format-number # : "1.0.2",
+
+# just assets
+ember install ember-cli-autoprefixer # : "0.6.0",
+ember install ember-cli-bootstrap-sassy # : "0.5.3",
+ember install ember-cli-sass # : "5.3.1",
+ember install ember-composable-helpers # : "0.21.1",
+ember install ember-config-service # : "0.1.2",
+ember install ember-font-awesome # : "2.1.0",
+ember install ember-lodash # : "0.0.6",
+ember install ember-named-yields # : "1.2.0",
+bower install --save material-design-lite
+
+## app.scss
+@import 'material-design-lite';
+@import "storefront";
+
+## ember-cli-build.js
+var app = new EmberAddon(defaults, {
+  babel: { includePolyfill: true },
+  snippetPaths: ['tests/dummy/app/templates/snippets'],
+  'ember-font-awesome': {
+    useScss: true, // for ember-cli-sass
+  },
+  sassOptions: {
+    includePaths: [
+      'bower_components/material-design-lite/src'
+    ]
+  }
+});
+
+app.import(app.bowerDirectory + '/material-design-lite/material.js');
