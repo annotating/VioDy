@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <base href="/storefront/" />
-<meta name="dummy/config/environment" content="%7B%22modulePrefix%22%3A%22dummy%22%2C%22environment%22%3A%22production%22%2C%22baseURL%22%3A%22/storefront/%22%2C%22namespace%22%3A%22api%22%2C%22locationType%22%3A%22auto%22%2C%22spreeToken%22%3A%22acd3424d5870b493033bbbdd61f78eb1cfef652f598f9df6%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22storefront%22%2C%22version%22%3A%220.1.1+82708544%22%7D%2C%22host%22%3A%22https%3A//desolate-brushlands-39207.herokuapp.com/%22%2C%22exportApplicationGlobal%22%3Afalse%2C%22ember-devtools%22%3A%7B%22global%22%3Atrue%2C%22enabled%22%3Afalse%7D%7D" />
+<meta name="dummy/config/environment" content="%7B%22modulePrefix%22%3A%22dummy%22%2C%22environment%22%3A%22production%22%2C%22baseURL%22%3A%22/storefront/%22%2C%22namespace%22%3A%22api%22%2C%22locationType%22%3A%22auto%22%2C%22spreeToken%22%3A%22acd3424d5870b493033bbbdd61f78eb1cfef652f598f9df6%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22storefront%22%2C%22version%22%3A%22v0.1.4%22%7D%2C%22host%22%3A%22https%3A//desolate-brushlands-39207.herokuapp.com/%22%2C%22exportApplicationGlobal%22%3Afalse%2C%22ember-devtools%22%3A%7B%22global%22%3Atrue%2C%22enabled%22%3Afalse%7D%7D" />
 
-    <link rel="stylesheet" href="assets/vendor-491237f5873d594526be9a7e6c7b56bd.css" />
+    <link rel="stylesheet" href="assets/vendor-f026e4822884e3f98885edbcf4a0d872.css" />
     <link rel="stylesheet" href="assets/dummy-df3b6d9e717a4f4ae0c212ed72529f2e.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -17,8 +17,8 @@
   <body class="ember-application">
     
 
-    <script src="assets/vendor-403eea6081f121a09bbd35705fae6889.js"></script>
-    <script src="assets/dummy-9735726daf4b0e73fc4a7d60605a1184.js"></script>
+    <script src="assets/vendor-6bb5168892c75a9e4448fd8dad6927d9.js"></script>
+    <script src="assets/dummy-94569915000c710cbd9955616ad4f23b.js"></script>
 
     
   
@@ -58,12 +58,76 @@
         <a class="mdl-navigation__link" href="http://www.getmdl.io/templates/android-dot-com/index.html">Template Source</a>
 </nav>
 </div>
-<div id="ember864" class="ember-view android-content mdl-layout__content">    <!---->
+<div id="ember864" class="ember-view android-content mdl-layout__content">    <div id="ember880" class="ember-view website-docs android-more-section"><div class="mdl-grid website-docs__components">
+  <aside class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--6-col-phone website-docs__nav">
+      <h4 class="mdl-component website-docs__item">Getting Started</h4>
+<a id="ember881" href="/storefront/assets" class="mdl-component__link website-docs__link mdl-button mdl-js-button ember-view active" data-upgraded=",MaterialButton">          Quick Start
+</a>      <h4 class="mdl-component website-docs__item">Components</h4>
+<a id="ember882" href="/storefront/assets/expositions" class="mdl-component__link website-docs__link mdl-button mdl-js-button ember-view" data-upgraded=",MaterialButton">          Expositions
+</a><a id="ember890" href="/storefront/assets/textbase-products" class="mdl-component__link website-docs__link mdl-button mdl-js-button ember-view" data-upgraded=",MaterialButton">          Text-base Product Card
+</a><a id="ember898" href="/storefront/assets/minihero" class="mdl-component__link website-docs__link mdl-button mdl-js-button ember-view" data-upgraded=",MaterialButton">          Mini Hero
+</a><a id="ember906" href="/storefront/assets/grid-cards" class="mdl-component__link website-docs__link mdl-button mdl-js-button ember-view" data-upgraded=",MaterialButton">          Grid Cards
+</a>  </aside>
+  <main class="mdl-cell mdl-cell--9-col mdl-cell--8-col-tablet mdl-cell--6-col-phone website-docs__pages">
+    <div class="website-docs__page-header">
+      <h3>Quick Start</h3>
+    </div>
+      <p>Store functionality depends on AutoX and spree, if you ember install, you'll need to handle those dependencies yourself</p>
 
-  <footer id="ember883" class="ember-view android-footer mdl-mega-footer"><div class="mdl-mega-footer--top-section">
+<p>If you only want assets, use npm install --save-dev</p>
+
+<pre id="ember922" class="ember-view hljs autoit"><span class="hljs-preprocessor"># data-connection</span>
+ember install active-model-adapter <span class="hljs-preprocessor"># : <span class="hljs-string">"2.1.1"</span>,</span>
+ember install autox <span class="hljs-preprocessor"># : <span class="hljs-string">"git://github.com/foxnewsnetwork/autox.git#96eb7e8411750867616754307b60ddb252f69567"</span>,</span>
+ember install ember-concurrency <span class="hljs-preprocessor"># : <span class="hljs-string">"0.6.0"</span>,</span>
+ember install ember-cpm <span class="hljs-preprocessor"># : <span class="hljs-string">"2.1.2"</span>,</span>
+ember install ember-moment <span class="hljs-preprocessor"># : <span class="hljs-string">"6.0.0"</span>,</span>
+ember install ember-phoenix-chan <span class="hljs-preprocessor"># : <span class="hljs-string">"0.1.10"</span>,</span>
+ember install ember-simple-auth <span class="hljs-preprocessor"># : <span class="hljs-string">"1.1.0-beta.3"</span>,</span>
+ember install ember-truth-helpers <span class="hljs-preprocessor"># : <span class="hljs-string">"1.2.0"</span>,</span>
+ember install ember-notify <span class="hljs-preprocessor"># : <span class="hljs-string">"5.0.2"</span>,</span>
+ember install ember-cli-format-<span class="hljs-built_in">number</span> <span class="hljs-preprocessor"># : <span class="hljs-string">"1.0.2"</span>,</span>
+
+<span class="hljs-preprocessor"># just assets</span>
+ember install ember-cli-autoprefixer <span class="hljs-preprocessor"># : <span class="hljs-string">"0.6.0"</span>,</span>
+ember install ember-cli-bootstrap-sassy <span class="hljs-preprocessor"># : <span class="hljs-string">"0.5.3"</span>,</span>
+ember install ember-cli-sass <span class="hljs-preprocessor"># : <span class="hljs-string">"5.3.1"</span>,</span>
+ember install ember-composable-helpers <span class="hljs-preprocessor"># : <span class="hljs-string">"0.21.1"</span>,</span>
+ember install ember-config-service <span class="hljs-preprocessor"># : <span class="hljs-string">"0.1.2"</span>,</span>
+ember install ember-font-awesome <span class="hljs-preprocessor"># : <span class="hljs-string">"2.1.0"</span>,</span>
+ember install ember-lodash <span class="hljs-preprocessor"># : <span class="hljs-string">"0.0.6"</span>,</span>
+ember install ember-named-yields <span class="hljs-preprocessor"># : <span class="hljs-string">"1.2.0"</span>,</span>
+bower install --save material-design-lite
+
+<span class="hljs-preprocessor">## app.scss</span>
+<span class="hljs-constant">@import</span> <span class="hljs-string">'material-design-lite'</span><span class="hljs-comment">;</span>
+<span class="hljs-constant">@import</span> <span class="hljs-string">"storefront"</span><span class="hljs-comment">;</span>
+
+<span class="hljs-preprocessor">## ember-cli-build.js</span>
+var app = new EmberAddon(defaults, {
+  babel: { includePolyfill: <span class="hljs-literal">true</span> },
+  snippetPaths: [<span class="hljs-string">'tests/dummy/app/templates/snippets'</span>],
+  <span class="hljs-string">'ember-font-awesome'</span>: {
+    useScss: <span class="hljs-literal">true</span>, // <span class="hljs-keyword">for</span> ember-cli-sass
+  },
+  sassOptions: {
+    includePaths: [
+      <span class="hljs-string">'bower_components/material-design-lite/src'</span>
+    ]
+  }
+})<span class="hljs-comment">;</span>
+
+app.import(app.bowerDirectory + <span class="hljs-string">'/material-design-lite/material.js'</span>)<span class="hljs-comment">;</span>
+</pre>
+
+  </main>
+</div>
+</div>
+
+  <footer id="ember941" class="ember-view android-footer mdl-mega-footer"><div class="mdl-mega-footer--top-section">
   <div class="mdl-mega-footer--left-section">
     <a href="https://github.com/pisources/pisources.github.io" class="mdl-mega-footer--social-btn">
-      <i id="ember893" aria-hidden="true" class="ember-view fa fa-github"><!----></i>
+      <i id="ember951" aria-hidden="true" class="ember-view fa fa-github"><!----></i>
     </a>
   </div>
   <div class="mdl-mega-footer--right-section">
@@ -74,15 +138,15 @@
   <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
 </div>
 <div class="mdl-mega-footer--bottom-section">
-<a id="ember894" href="/storefront/instructors" class="android-link mdl-typography--font-light ember-view">        Instructors
-</a>    <a id="ember895" href="/storefront/contact" class="android-link mdl-typography--font-light ember-view">        Contact
-</a>    <a id="ember896" href="/storefront/schedule" class="android-link mdl-typography--font-light ember-view">        Schedule
-</a>    <a id="ember897" href="/storefront/assets" class="android-link mdl-typography--font-light ember-view active">        Assets
+<a id="ember952" href="/storefront/instructors" class="android-link mdl-typography--font-light ember-view">        Instructors
+</a>    <a id="ember953" href="/storefront/contact" class="android-link mdl-typography--font-light ember-view">        Contact
+</a>    <a id="ember954" href="/storefront/schedule" class="android-link mdl-typography--font-light ember-view">        Schedule
+</a>    <a id="ember955" href="/storefront/assets" class="android-link mdl-typography--font-light ember-view active">        Assets
 </a>          <a class="android-link mdl-typography--font-light" href="https://desolate-brushlands-39207.herokuapp.com/admin">Admin</a>
       <a class="android-link mdl-typography--font-light" href="http://www.getmdl.io/templates/android-dot-com/index.html">Template Source</a>
 </div>
 <!---->
 </footer>
 
-</div><!----><div class="mdl-layout__obfuscator"></div></div></div><div id="ember918" class="ember-view ember-notify-cn ember-notify-default"><!----></div>
+</div><!----><div class="mdl-layout__obfuscator"></div></div></div><div id="ember976" class="ember-view ember-notify-cn ember-notify-default"><!----></div>
 </div></body></html>
